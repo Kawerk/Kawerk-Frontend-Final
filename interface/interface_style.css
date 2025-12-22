@@ -137,3 +137,40 @@ nav a.active {
     margin: 10px 0;
     font-size: 28px;
 }
+/*Container*/
+.container {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* Search box styling */
+  .search-box,.brands{
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      flex: 1;
+      min-width: 300px;
+  }
+  .brands {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #f9f9f9; /* Optional background */
+  }
+  
+  .brands img {
+      width: 60px;
+      height: auto;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+  }
+  
+  .brands img:hover {
+      transform: scale(1.1);
+  }
