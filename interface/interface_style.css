@@ -118,3 +118,22 @@ nav a:hover {
 nav a.active {
     color: #ffcc00;
 }
+/*Banner*/
+.banner {
+    background: linear-gradient(to right, #ffa726, #fb8c00);
+    color: white;
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-text {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 60%;
+}
+
+.banner h2 {
+    margin: 10px 0;
+    font-size: 28px;
+}
