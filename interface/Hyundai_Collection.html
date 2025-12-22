@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Hyundai Collection - Auto Trust</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .model-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .model-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        button {
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            transform: translateY(-2px);
+        }
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl w-full bg-white shadow-lg rounded-xl p-8 space-y-8">
+        <header class="text-center">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Our Hyundai Collection</h1>
+            <p class="text-lg text-gray-600 mb-6">
+                Explore the latest Hyundai models available at Auto Trust in Egypt, combining innovative design, advanced technology, and reliable performance tailored for the Egyptian market.
+            </p>
+        </header>
