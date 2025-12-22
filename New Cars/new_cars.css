@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(247, 245, 245); 
+    margin: 0; 
+    padding: 0;  
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    background-image: url("https://cdn.aarp.net/content/dam/aarp/auto/2020/03/1140-couple-driving-near-beach.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+}
