@@ -174,3 +174,69 @@ nav a.active {
   .brands img:hover {
       transform: scale(1.1);
   }
+  /* Headline */
+.search-box h3 {
+    margin-bottom: 15px;
+}
+
+/* Inputs and selects */
+.search-box select,
+.search-box input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Button */
+.search-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3366ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #0055aa;
+}
+
+/*Features*/
+.features{
+    background: white;
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.features figure{
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+}
+.features figure img{
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: black 0 0 10px;
+    width: 200px;
+}
+
+/*Footer*/
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
