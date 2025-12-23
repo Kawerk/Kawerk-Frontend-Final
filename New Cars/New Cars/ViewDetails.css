@@ -100,3 +100,57 @@ nav a:hover,
 nav a.active {
   color: var(--primary-color);
 }
+/* Header Bottom */
+.header-bottom {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.header-bottom h1,
+.header-bottom p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header-bottom h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header-bottom p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.header-bottom button {
+  background-color: var(--primary-color);
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header-bottom button:hover {
+  background-color: var(--primary-hover);
+}
+/* Login Button */
+.login-button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: var(--accent-hover);
+}
