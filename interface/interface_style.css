@@ -244,3 +244,28 @@ footer {
     margin: 0 auto;
     padding: 0 20px;
 }
+/* solving the problem*/
+@media (max-width: 768px) {
+    header {
+      height: auto;
+      padding: 10px;
+    }
+  
+    .header-top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header-bottom h1 {
+      font-size: 28px;
+    }
+  
+    .content {
+      padding: 20px;
+      font-size: 1em;
+    }
+  
+    .banner-text {
+      font-size: 18px;
+    }
+  }
