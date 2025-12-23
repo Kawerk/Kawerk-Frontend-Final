@@ -105,3 +105,48 @@
                             <li>Seating Capacity: 5</li>
                             <li>Safety: Blind-Spot View Monitor, Lane-Keep Assist, Multiple Airbags</li>
                         </ul>
+                        <h3>Contact Us</h3>
+                        <p>Interested in the Kia Sportage Hybrid? <a href="#">Contact our dealers</a> for more information or to schedule a test drive.</p>
+                        <a href="../New Cars/new_cars.html" class="back-button">Back to New Cars</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Auto Trust. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+    const slider = document.querySelector('.car-images-slider');
+    const slides = document.querySelectorAll('.car-image-item');
+    const prevButton = document.querySelector('.slider-control.prev');
+    const nextButton = document.querySelector('.slider-control.next');
+    
+    let currentIndex = 0;
+
+    function updateSliderPosition() {
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    nextButton.addEventListener('click', () => {
+      if (currentIndex < slides.length - 1) {
+        currentIndex++;
+        updateSliderPosition();
+      }
+    });
+
+    prevButton.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSliderPosition();
+      }
+    });
+    
+    window.addEventListener('resize', updateSliderPosition);
+    </script>
+</body>
+</html>
