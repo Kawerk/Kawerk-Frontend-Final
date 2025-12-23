@@ -84,3 +84,67 @@
                         <p class="price">Price: 1,650,000 EGP</p>
                         <h3>Overview</h3>
                         <p>The Toyota Corolla is a dependable and fuel-efficient compact sedan known for its smooth ride, advanced safety features, and excellent value. It’s a top choice for drivers seeking reliability and economy.</p>
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Fuel-efficient engine</li>
+                            <li>Modern and aerodynamic design</li>
+                            <li>Comfortable and spacious interior</li>
+                            <li>Comprehensive safety suite including Toyota Safety Sense</li>
+                            <li>User-friendly touchscreen infotainment system</li>
+                            <li>Ample trunk space</li>
+                        </ul>
+
+                        <h3>Specifications</h3>
+                        <ul>
+                            <li>Engine: 1.8L Inline-4</li>
+                            <li>Transmission: Continuously Variable Transmission (CVT)</li>
+                            <li>Fuel Economy: Approximately 19 km/liter (combined)</li>
+                            <li>Seating Capacity: 5</li>
+                            <li>Safety: Multiple airbags, ABS, Traction Control, Lane Departure Alert</li>
+                        </ul>
+
+                        <h3>Contact Us</h3>
+                        <p>Interested in the Toyota Corolla? <a href="#">Contact our dealers</a> for more information or to schedule a test drive.</p>
+                        <a href="../New Cars/new_cars.html" class="back-button">Back to New Cars</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Auto Trust. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+    const slider = document.querySelector('.car-images-slider');
+    const slides = document.querySelectorAll('.car-image-item');
+    const prevButton = document.querySelector('.slider-control.prev');
+    const nextButton = document.querySelector('.slider-control.next');
+    
+    let currentIndex = 0;
+
+    function updateSliderPosition() {
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    nextButton.addEventListener('click', () => {
+      if (currentIndex < slides.length - 1) {
+        currentIndex++;
+        updateSliderPosition();
+      }
+    });
+
+    prevButton.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSliderPosition();
+      }
+    });
+    
+    window.addEventListener('resize', updateSliderPosition);
+    </script>
+</body>
+</html>
