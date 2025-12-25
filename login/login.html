@@ -19,3 +19,36 @@
     </form>
     <p>Don't have an account? <a href="signup.html">Sign up</a></p>
   </div>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+
+      const username = document.querySelector('input[name="username"]').value.trim();
+      const password = document.querySelector('input[name="password"]').value.trim();
+
+      // Hardcoded valid credentials
+      const validUsername = "user";
+      const validPassword = "1234";
+
+      if (username === validUsername && password === validPassword) {
+        Swal.fire({
+          title: `Welcome, ${username}!`,
+          text: 'You have successfully logged in.',
+          icon: 'success',
+          confirmButtonText: 'Continue'
+        });
+      } else {
+        Swal.fire({
+          title: 'Login Failed',
+          text: 'Invalid username or password.',
+          icon: 'error',
+          confirmButtonText: 'Try Again'
+        });
+      }
+
+      return false; // prevent form submission
+    }
+  </script>
+</body>
+</html>
