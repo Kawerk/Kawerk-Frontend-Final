@@ -196,3 +196,56 @@ main {
 .slider-control.next {
   right: 15px;
 }
+/* Car Info Box */
+.car-info {
+  background-color: var(--bg-light);
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  line-height: 1.7;
+}
+
+.car-info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.car-info .price {
+  font-size: 24px;
+  color: var(--success-color);
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.car-info h3 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.car-info ul {
+  padding-left: 25px;
+  list-style: disc;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.car-info ul li {
+  margin-bottom: 8px;
+}
+
+.car-info p {
+  font-size: 18px;
+  color: var(--text-light);
+  margin-bottom: 25px;
+}
+
+.contact a {
+  color: #21b9ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
